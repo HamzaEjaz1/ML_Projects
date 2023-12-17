@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Speices Prediction</title>
+</head>
+<body>
+    
+    <form action="/predict" method="POST">
+<label for="sepal lenght">Sepal Length :</label> <br>
+<input type="text" id="sl" name="sepal_length"><br>
+<label for="petal_length">Petal Length :</label> <br>
+<input type="text" id="pl" name="petal_length"><br>
+<label for="sepal_width">Sepal width :</label> <br>
+<input type="text" id="sw" name="sepal_width"><br>
+<label for="petal_width">petal width :</label> <br>
+<input type="text" id="pw" name="petal_width"><br>
+
+<h1>Class : {{result}}</h1>
+<button type="submit" value="predict"></button>
+    </form>
+</body>
+</html>
